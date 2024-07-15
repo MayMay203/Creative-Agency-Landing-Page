@@ -223,31 +223,34 @@ body{
 }
 
 .hero__img:nth-child(3){
-    bottom: -67px;
+    bottom: -25px;
     right: 115px;
 }
 
 .hero__img:nth-child(4){
-    bottom: -42px;
-    right: 71px;
+    bottom: 0;
+    right: 72px;
+}
+
+.brand{
+    margin-top: 80px;
 }
 
 .brand__list{
     border-radius: 999px;
     background-color: var(--light-green);
     padding: 76px 121px;
-    margin-top: 130px;
 }
 
 .brand__list{
     display: flex;
     align-items: center;
-    gap: 47px;
+    justify-content: space-between;
 }
 
 .brand__item{
     color: var(--black-green);
-    font-size: 3.1rem;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -255,6 +258,10 @@ body{
     align-items: center;
     gap: 4px;
     flex-shrink: 0;
+}
+
+.brand__item:nth-child(4){
+    font-family: "Sonsie One", system-ui;
 }
 
 .brand__item:hover{
