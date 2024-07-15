@@ -6,6 +6,7 @@
     --black-green: #143C3C;
     --black-gray: #575D5E;
     --black: #152427;
+    --light-green: #E2EDDF;
 }
 
 html{
@@ -130,7 +131,7 @@ body{
 
 /* Hero */
 .hero{
-    padding-top: 60px;
+    padding: 60px;
     position: relative;
 }
 
@@ -229,4 +230,34 @@ body{
 .hero__img:nth-child(4){
     bottom: -42px;
     right: 71px;
+}
+
+.brand__list{
+    border-radius: 999px;
+    background-color: var(--light-green);
+    padding: 76px 121px;
+    margin-top: 130px;
+}
+
+.brand__list{
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+.brand__item{
+    color: var(--black-green);
+    font-size: 3.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.brand__item:hover{
+    cursor:pointer;
+    transform: scale(1.2);
 }
