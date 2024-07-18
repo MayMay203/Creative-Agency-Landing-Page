@@ -381,6 +381,7 @@ a{
 
 .service-item__content{
     padding-bottom: 18px;
+    transition: padding .25s ease;
 }
 .service-item:hover .service-item__content{
     padding-left: 23px;
