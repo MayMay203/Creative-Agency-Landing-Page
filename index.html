@@ -47,7 +47,7 @@
         <div class="header__inner">
             <!-- Logo -->
             <div class="header__logo">
-                <img src="./assets/icons/logo.svg" alt="logo">
+                <a href="#"><img src="./assets/icons/logo.svg" alt="logo"></a>
             </div>
             <!-- Navbar -->
             <div class="header__actions">
@@ -72,7 +72,7 @@
         </div>
     </div>
 </header>
-<main style="height: 1000px;">
+<main>
     <section class="hero">
         <div class="container">
             <div class="hero__inner">
@@ -185,7 +185,7 @@
         </div>
     </section>
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__inner">
                 <div class="about__media">
@@ -306,6 +306,7 @@
            <div class="video__container">
             <video src="./assets/video/video.mp4" class="video-play" controls></video>
             <button class="video__play-btn">
+                <img src="./assets/icons/play_video.svg" alt="play-icon">
             </button>
            </div>
         </div>
@@ -343,7 +344,7 @@
         </div>
         </section>
         <!-- Blog and articles -->
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="container">
                 <p class="title">BLOG & ARTICLES</p>
                 <div class="blog-head">
@@ -386,11 +387,67 @@
                             <span class="blog__date">JANUARY 29, 2022</span>
                         </div>
                     </article>
-        
                 </div>
         </div>
     </section>
 </main>
+<footer class="footer" id="contact">
+    <div class="container">
+       <div class="footer__inner">
+            <div class="footer__info">
+                <h2 class="footer__heading">Sign up for our newsletter</h2>
+                <div class="footer__enter">
+                    <input type="text" class="footer__input" placeholder="Enter your email">
+                    <a href="#!"><img src="./assets/icons/next.svg" alt="next"></a>
+                </div>
+                <div class="footer__socials">
+                    <a href="#!" class="footer__social-link"><img src="./assets/icons/fb.svg" alt="fb" class="footer__social-img"></a>
+                    <a href="#!" class="footer__social-link"><img src="./assets/icons/insta.svg" alt="instagram" class="footer__social-img"></a>
+                    <a href="#!" class="footer__social-link"><img src="./assets/icons/twitter.svg" alt="twitter" class="footer__social-img"></a>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__column">
+                    <a href="#!"><h3 class="footer-column__heading">Pages</h3></a>
+                    <ul class="footer__list">
+                        <li><a href="#!" class="footer__link">Home</a></li>
+                        <li><a href="#!" class="footer__link">About</a></li>
+                        <li><a href="#!" class="footer__link">Blog</a></li>
+                        <li><a href="#!" class="footer__link">Blog Post</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <a href="#!"><h3 class="footer-column__heading">Product</h3></a>
+                    <ul class="footer__list">
+                        <li><a href="#!" class="footer__link">Home</a></li>
+                        <li><a href="#!" class="footer__link">About</a></li>
+                        <li><a href="#!" class="footer__link">Blog</a></li>
+                        <li><a href="#!" class="footer__link">Blog Post</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                   <a href="#!"> <h3 class="footer-column__heading">Overview</h3></a>
+                    <ul class="footer__list">
+                        <li><a href="#!" class="footer__link">Home1</a></li>
+                        <li><a href="#!" class="footer__link">Home2</a></li>
+                        <li><a href="#!" class="footer__link">Home3</a></li>
+                        <li><a href="#!" class="footer__link">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <a href="#!"><h3 class="footer-column__heading">About us</h3></a>
+                    <ul class="footer__list">
+                        <li><a href="#!" class="footer__link">Team</a></li>
+                        <li><a href="#!" class="footer__link">Investors</a></li>
+                        <li><a href="#!" class="footer__link">Blog</a></li>
+                        <li><a href="#!" class="footer__link">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span class="footer__line"></span>
+    </div>
+</footer>
 </body>
 <script src="./assets/script/script.js"></script>
 </html>
