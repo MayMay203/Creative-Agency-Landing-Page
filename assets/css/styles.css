@@ -274,13 +274,13 @@ a{
 }
 
 .hero__img:nth-child(1){
-    top: 32px;
+    top: 16px;
     left: 387px;
     z-index: 1;
 }
 
 .hero__img:nth-child(2){
-    top: 28px;
+    top: 12px;
     left: 431px;
 }
 
@@ -379,7 +379,6 @@ a{
 .service-item__content{
     padding-bottom: 18px;
     transition: padding .25s ease;
-    transition-delay: .2s;
 }
 .service-item:hover .service-item__content{
     padding-left: 23px;
