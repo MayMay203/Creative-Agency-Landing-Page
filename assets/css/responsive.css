@@ -1,0 +1,96 @@
+/* PC screen */
+@media screen and (min-width: 992px){
+    .header__menu{
+        display: none;
+    }
+
+
+}
+
+/* Mobile, tablet screen */
+@media screen and (max-width: 991.98px){
+    .navbar__list{
+        display: none;
+    }
+
+    .btn{
+        width: 100px;
+        height: 40px;
+        border-radius: 43px;
+        color: #FFF;
+        font-size: 1.5rem;
+        line-height: 1.16;
+    }
+
+    .header__menu{
+        margin-left: 30px;
+    }
+
+    .header__inner::after{
+        display: none;
+    }
+
+    .logo{
+        height: 22px;
+    }
+
+    .header__menu-overlay{
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s ease;
+    }
+
+    .input-checkbox:checked + .header__menu-overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header__menu-drawer{
+        background-color: #FFF;
+        position: fixed;
+        inset: 0 0 0 60%;
+        z-index: 2;
+        transform: translateX(100%);
+        transition: .5s ease;
+        padding: 40px;
+    }
+
+    .input-checkbox:checked ~ .header__menu-drawer{
+        transform: translateX(0);
+    }
+
+    .header__menu-drawer .navbar__list{
+        display: block;
+        margin: 0;
+    }
+
+    .header__menu-drawer ul a{
+        display: block;
+        padding: 16px 0 16px 16px;
+    }
+
+    .navbar__link--active::after{
+        display: none;
+    }
+
+
+
+
+
+
+
+}
+
+/* Tablet screen */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+
+}
+
+/* Mobile screen */
+@media screen and(max-width: 767.98px){
+    
+}

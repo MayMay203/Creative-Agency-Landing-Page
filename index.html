@@ -6,6 +6,7 @@
     <title>MODULARS</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
@@ -42,12 +43,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- PC header -->
 <header class="header header--fixed">
     <div class="container">
         <div class="header__inner">
             <!-- Logo -->
             <div class="header__logo">
-                <a href="#"><img src="./assets/icons/logo.svg" alt="logo"></a>
+                <a href="#"><img src="./assets/icons/logo.svg" alt="logo" class="logo"></a>
             </div>
             <!-- Navbar -->
             <div class="header__actions">
@@ -68,11 +70,33 @@
                     </ul>
                 </nav>
                 <a href="#!" class="btn">Sign Up</a>
+                <label for="input-checkbox" class="header__menu">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="2" fill="#143C3C" />
+                        <rect y="7" width="18" height="2" fill="#143C3C" />
+                        <rect y="14" width="18" height="2" fill="#143C3C" />
+                    </svg>
+                </label>
             </div>
         </div>
     </div>
 </header>
-<main>
+<!--Header Menu-->
+<header class="mobile-header">
+    <input type="checkbox" id="input-checkbox" class="input-checkbox" hidden>
+    <!-- Overlay -->
+     <label for="input-checkbox" class="header__menu-overlay">
+     </label>
+     <!-- Content -->
+     <div class="header__menu-drawer">
+     </div>
+     <script>
+        const menuDrawer = document.querySelector('.header__menu-drawer')
+        const navbar = document.querySelector('.navbar')
+        menuDrawer.innerHTML = navbar.innerHTML
+     </script>
+</header>
+<main hidden>
     <section class="hero">
         <div class="container">
             <div class="hero__inner">
