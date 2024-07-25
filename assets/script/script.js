@@ -25,3 +25,33 @@ playBtn.addEventListener('click', () => {
         playBtn.innerHTML='<img src="./assets/icons/pause_video.svg" alt="play-icon" class="video__pause-icon">'
     }
 })
+
+const btnBack = document.querySelector('.btn-back')
+const btnNext = document.querySelector('.btn-next')
+const serviceBody = document.querySelector('.service-body')
+const serviceList = serviceBody.querySelector('.service__list').querySelectorAll('.service-item')
+let index = 0;
+btnNext.addEventListener('click', () => {
+    if (index < serviceList.length - 1) {
+        index++;
+    }
+    serviceList.forEach(serviceItem => {
+        serviceItem.style.transform = `translateX(${-index * 100}%)`
+    })
+})
+
+btnBack.addEventListener('click', () => {
+    if (0 < index && index <= serviceList.length - 1) {
+        index--;
+    }
+    serviceList.forEach(serviceItem => {
+        serviceItem.style.transform = `translateX(${-index * 100}%)`
+    })
+})
+
+const menuDrawer = document.querySelector('.header__menu-drawer')
+const footerDrawer = document.querySelector('.footer__menu-drawer')
+const footerRow = document.querySelector('.footer__row')
+const navbar = document.querySelector('.navbar')
+menuDrawer.innerHTML = navbar.innerHTML
+footerDrawer.innerHTML = footerRow.innerHTML

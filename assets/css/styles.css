@@ -19,6 +19,7 @@ html{
 
 body, html{
     scroll-behavior: smooth;
+    /* overflow-x:hidden ; */
 }
 
 body{
@@ -370,6 +371,7 @@ a{
 .service-item{
     background-color: #fff;
     border-radius: 20px;
+    flex-shrink: 0;
 }
 
 .service-item:hover{
@@ -1004,8 +1006,13 @@ a{
     line-height: 2.25; 
 }
 
-.footer__socials{
+.footer__bottom{
     margin-top: 47px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__socials{
     display: flex;
     gap: 0 22px;
 }

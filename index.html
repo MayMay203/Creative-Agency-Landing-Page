@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -85,26 +85,20 @@
 <header class="mobile-header">
     <input type="checkbox" id="input-checkbox" class="input-checkbox" hidden>
     <!-- Overlay -->
-     <label for="input-checkbox" class="header__menu-overlay">
-     </label>
-     <!-- Content -->
-     <div class="header__menu-drawer">
-     </div>
-     <script>
-        const menuDrawer = document.querySelector('.header__menu-drawer')
-        const navbar = document.querySelector('.navbar')
-        menuDrawer.innerHTML = navbar.innerHTML
-     </script>
+    <label for="input-checkbox" class="overlay">
+    </label>
+    <!-- Content -->
+<div class="header__menu-drawer"></div>
 </header>
-<main hidden>
+<main>
     <section class="hero">
         <div class="container">
             <div class="hero__inner">
                 <section class="hero__content">
                     <h1 class="hero__heading">We’re a creative design agency.</h1>
-                    <p class="desc">A brilliant, modular agency template for startup’s build yours toady.</p>
+                    <p class="desc hero__desc">A brilliant, modular agency template for startup’s build yours toady.</p>
                     <div class="hero__actions">
-                        <a href="#!" class="btn">Get in touch</a>
+                        <a href="#!" class="btn hero-btn">Get in touch</a>
                         <a href="#!" class="hero__btn-play">
                             <img class="play-icon" src="./assets/icons/play.svg" alt="play-icon">
                             <span class="hero__btn-text">Watch Video</span>
@@ -171,41 +165,55 @@
                     </button>
                 </div>
             </div>
-            <section class="service__list">
-                <section class="service-item">
-                    <a href="#!">
-                        <img src="./assets/img/service-1.jpg" alt="service" class="service-item__img">
-                    </a>
-                    <div class="service-item__content">
+            <div class="service-body">
+                <button href="#!" class="control-btn btn-back">
+                    <svg width="10" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 5.23529H1.11482M1.11482 5.23529L5 1M1.11482 5.23529L5 9" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <section class="service__list">
+                    <section class="service-item">
                         <a href="#!">
-                            <h3 class="section-item-heading">Branding</h3>
+                            <img src="./assets/img/service-1.jpg" alt="service" class="service-item__img">
                         </a>
-                        <p class="service-item__desc">Create beautiful Agency website with
-                            Boluethat converts more visitors than
-                            any website.</p>
-                    </div>
+                        <div class="service-item__content">
+                            <a href="#!">
+                                <h3 class="section-item-heading">Branding</h3>
+                            </a>
+                            <p class="service-item__desc">Create beautiful Agency website with
+                                Boluethat converts more visitors than
+                                any website.</p>
+                        </div>
+                    </section>
+                    <section class="service-item">
+                        <a href="#!"><img src="./assets/img/service-2.jpg" alt="service" class="service-item__img"></a>
+                        <div class="service-item__content">
+                            <a href="#!">
+                                <h3 class="section-item-heading">Web Design</h3>
+                            </a>
+                            <p class="service-item__desc">Create beautiful Agency website with
+                                Boluethat converts more visitors than
+                                any website.</p>
+                        </div>
+                    </section>
+                    <section class="service-item">
+                        <a href="#!"><img src="./assets/img/service-3.jpg" alt="service" class="service-item__img"></a>
+                        <div class="service-item__content">
+                            <a href="#!""><h3 class=" section-item-heading">Graphic Design</h3></a>
+                            <p class="service-item__desc">Create beautiful Agency website with
+                                Boluethat converts more visitors than
+                                any website.</p>
+                        </div>
+                    </section>
                 </section>
-                <section class="service-item">
-                    <a href="#!"><img src="./assets/img/service-2.jpg" alt="service" class="service-item__img"></a>
-                    <div class="service-item__content">
-                        <a href="#!">
-                            <h3 class="section-item-heading">Web Design</h3>
-                        </a>
-                        <p class="service-item__desc">Create beautiful Agency website with
-                            Boluethat converts more visitors than
-                            any website.</p>
-                    </div>
-                </section>
-                <section class="service-item">
-                    <a href="#!"><img src="./assets/img/service-3.jpg" alt="service" class="service-item__img"></a>
-                    <div class="service-item__content">
-                        <a href="#!""><h3 class=" section-item-heading">Graphic Design</h3></a>
-                        <p class="service-item__desc">Create beautiful Agency website with
-                            Boluethat converts more visitors than
-                            any website.</p>
-                    </div>
-                </section>
-            </section>
+                <button href="#!" class="control-btn btn-next">
+                    <svg width="10" height="16" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 5.23529H4.88518M4.88518 5.23529L1 1M4.88518 5.23529L1 9" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                </div>
         </div>
     </section>
     <!-- About -->
@@ -424,10 +432,19 @@
                     <input type="text" class="footer__input" placeholder="Enter your email">
                     <a href="#!"><img src="./assets/icons/next.svg" alt="next"></a>
                 </div>
+                <div class="footer__bottom">
                 <div class="footer__socials">
                     <a href="#!" class="footer__social-link"><img src="./assets/icons/fb.svg" alt="fb" class="footer__social-img"></a>
                     <a href="#!" class="footer__social-link"><img src="./assets/icons/insta.svg" alt="instagram" class="footer__social-img"></a>
                     <a href="#!" class="footer__social-link"><img src="./assets/icons/twitter.svg" alt="twitter" class="footer__social-img"></a>
+                </div>
+                <label for="checkbox-footer" class="footer__menu">
+                    <svg width="30" height="27" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24.75" height="2.75" fill="white" />
+                        <rect y="9.625" width="24.75" height="2.75" fill="white" />
+                        <rect y="19.25" width="24.75" height="2.75" fill="white" />
+                    </svg>
+                </label>
                 </div>
             </div>
             <div class="footer__row">
@@ -471,6 +488,12 @@
         </div>
         <span class="footer__line"></span>
     </div>
+</footer>
+<footer class="mobile-footer">
+    <input type="checkbox" id="checkbox-footer" class="checkbox-footer" hidden>
+    <label for="checkbox-footer" class="footer__overlay">
+    </label>
+    <div class="footer__menu-drawer"></div>
 </footer>
 </body>
 <script src="./assets/script/script.js"></script>
